@@ -17,8 +17,9 @@ Id:
 7 Element 元素
 5 Weapon 武器
 2 Rarity 星级
-5 Body Type体型
+5 Body Type 体型
 7 Region 国家
+Version Introduced 版本
 
 X, y, z axes 
 Pcr for similarity comparison 
