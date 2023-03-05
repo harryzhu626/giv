@@ -1,7 +1,9 @@
-* Host on web for public use, intuitive interface, continual update(?)
+host on web for public use, intuitive interface, continual update(?)
 
-
-Genshin visualization: describe the idea, ask for pointers. 
+functions: 
+1. select rows and columns and display corresponding char icons
+2. hover mouse over icon for more information and wiki link 
+3. language options EN & CN
 
 Character data store in json 
 Id: 
