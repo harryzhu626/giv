@@ -1,13 +1,4 @@
-# genshin_chart (project Hyperbloom)
-
-* Main function
-    * sentiment analysis of genshin char through time, OSINT on twitter. 
-    * Information extraction: character co-mention/association
-* Theoretical trends/patterns:
-    * How new char influence sentiment change of old char
-    * Revenue against popularity 
-    * 
-* Host on web for everyone to view, intuitive interface, continual update(?)
+* Host on web for public use, intuitive interface, continual update(?)
 
 
 Genshin visualization: describe the idea, ask for pointers. 
