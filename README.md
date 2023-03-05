@@ -13,13 +13,14 @@
 Genshin visualization: describe the idea, ask for pointers. 
 
 Character data store in json 
-Id:
-7 Element 元素
-5 Weapon 武器
-2 Rarity 星级
-5 Body Type 体型
-7 Region 国家
-Version Introduced 版本
+Id: 
+Name 角色名称
+Element 元素
+Weapon 武器
+Body Type 体型
+Region 国家
+Rarity 星级
+Version Introduced 实装版本
 
 X, y, z axes 
 Pcr for similarity comparison 
