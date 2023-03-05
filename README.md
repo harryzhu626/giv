@@ -6,6 +6,7 @@ functions:
 3. hide subcategories, e.g. hide claymore from weapon axis or 4 stars from rarity axis
 4. hover mouse over icon for more information and wiki link 
 5. language options EN & CN
+6. some kind of analytics, e.g. 4/5 star ratios in each element comparison. 
 
 Character data store in json 
 Id: 
