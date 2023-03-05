@@ -1,3 +1,11 @@
+#fontaine
+
+
+#natlan
+
+
+#snezhnaya
+
 host on web for public use, intuitive interface, continual update(?)
 
 functions: 
@@ -29,7 +37,3 @@ Params:
     * Subfield order 
 * Button for CH, EN
 * game versions 1.0-3.5
-
-#fontaine
-#natlan
-#snezhnaya
