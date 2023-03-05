@@ -2,8 +2,10 @@ host on web for public use, intuitive interface, continual update(?)
 
 functions: 
 1. select rows and columns and display corresponding char icons
-2. hover mouse over icon for more information and wiki link 
-3. language options EN & CN
+2. select version range, e.g. 1.5 to 2.7
+3. hide subcategories, e.g. hide claymore from weapon axis or 4 stars from rarity axis
+4. hover mouse over icon for more information and wiki link 
+5. language options EN & CN
 
 Character data store in json 
 Id: 
