@@ -30,6 +30,6 @@ Params:
 * Button for CH, EN
 * game versions 1.0-3.5
 
-###fontaine
-###natlan
-###snezhnaya
+#fontaine
+#natlan
+#snezhnaya
