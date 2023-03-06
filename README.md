@@ -1,2 +1,0 @@
-# genshin_chart
-tbd
