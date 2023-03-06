@@ -1,4 +1,4 @@
-# genshin character data visualizer
+# give = genshin impact (character data) visualizer
 
 host on web for public use, intuitive interface, continual update(?)
 
