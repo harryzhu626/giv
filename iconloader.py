@@ -4,9 +4,11 @@ charicon_path = 'icons/characters/'
 elementicon_path = 'icons/elements/'
 weaponicon_path = 'icons/weapons/'
 regionicon_path = 'icons/regions/'
+rarityicon_path = 'icons/rarity/'
+bodytype_path = 'icons/bodytypes/'
 
 # given csv dataframe, return a dictionary of char icons 
-def load_icon(data):
+def load_profile(data):
     icon_dict = {}
     for char_name in data['name']:
         try:
@@ -27,6 +29,10 @@ def load_icon(_field, entity_name):
         _path = weaponicon_path
     elif _field == 'region':
         _path = regionicon_path
+    elif _field == 'rarity':
+        _path = rarityicon_path
+    else:
+        _path = bodytype_path
     return image_to_base64(f'{_path}{entity_name}.png')
 
 def image_to_base64(image_path):

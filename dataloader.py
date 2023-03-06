@@ -9,8 +9,8 @@ regions = ['Mondstadt', 'Liyue', 'Inazuma', 'Sumeru', 'Fontaine', 'Natlan', 'Sne
 # sword-0, claymore-1, polearm-2, bow-3, catalyst-4
 weapons = ['sword', 'claymore', 'polearm', 'bow', 'catalyst']
 # sf-0, mf-1, mm-2, tf-3, tm-4
-body_types = ['small female', 'medium female', 'medium male', 'tall female', 'tall male']
-rarities = [4, 5]
+body_types = ['small_female', 'medium_female', 'medium_male', 'tall_female', 'tall_male']
+rarities = ['4', '5']
 versions = [
     # 0     1       2       3       4   5       6
     '1.0', '1.1', '1.2', '1.3', '1.4', '1.5', '1.6', # 0-6
@@ -84,9 +84,9 @@ characters = [
     [60, 'Yaoyao', elements[3], weapons[2], body_types[0], regions[1], rarities[0], versions[20]],
     [61, 'Alhaitham', elements[3], weapons[0], body_types[4], regions[3], rarities[1], versions[20]],
     [62, 'Dehya', elements[5], weapons[1], body_types[3], regions[3], rarities[1], versions[21]],
-    [63, 'Mika', elements[6], weapons[2], body_types[2], regions[0], rarities[0], versions[21]],
-    [64, 'Baizhu', elements[3], weapons[4], body_types[4], regions[1], rarities[1], versions[22]],
-    [65, 'Kaveh', elements[3], weapons[1], body_types[4], regions[3], rarities[0], versions[22]],
+    # [63, 'Mika', elements[6], weapons[2], body_types[2], regions[0], rarities[0], versions[21]],
+    # [64, 'Baizhu', elements[3], weapons[4], body_types[4], regions[1], rarities[1], versions[22]],
+    # [65, 'Kaveh', elements[3], weapons[1], body_types[4], regions[3], rarities[0], versions[22]],
 ]
 
 filename = 'characters.csv'
