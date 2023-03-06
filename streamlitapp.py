@@ -3,9 +3,17 @@ import streamlit as st
 import streamlit.components.v1 as components
 from iconloader import load_profile, load_icon
 from dataloader import create_csv
-from imagedownloader import convert_html_png
 
-st.set_page_config(layout='wide')
+st.set_page_config(
+    page_title='genshin character visualizer',
+    page_icon='🤗',
+    layout='wide', 
+    initial_sidebar_state="auto",
+    menu_items={
+        'About': "I've had this idea for a while.", 
+        'Report a bug': "https://github.com/harryzhu626?tab=repositories"
+    }
+)
 datapath = 'characters.csv'
 
 # given a file path to a csv containing character data, return csv data as pandas dataframe
@@ -66,7 +74,6 @@ def create_html(table, icon_dict, fields):
     
     html_markup = stylize_html(html_table)
     components.html(html_markup, width=2000, height=2000, scrolling=True)
-    return html_markup
 
 
 def stylize_html(html):
@@ -98,6 +105,4 @@ def run_streamlit():
     table, fields = generate_pd_table(data)
     # st.table(table)
     icon_dict = load_profile(data)
-    html_markup = create_html(table, icon_dict, fields)
-    imagefile = convert_html_png(html_markup)
-    download_option(imagefile)
+    create_html(table, icon_dict, fields)
