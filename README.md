@@ -9,4 +9,4 @@ functionalities:
 4. click icon for wiki page 
 5. language options EN & CN
 6. some analytics, e.g. 4/5 star ratios in each element comparison. 
-7. button to download chart as png
+7. button to download chart as png (or the user can just take a screenshot)
