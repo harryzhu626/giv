@@ -41,6 +41,8 @@ def st_sidebar(fields):
         body_selector = st.multiselect('body type(s) to include', body_types)
         rarity_selector = st.multiselect('rarity(s) to include', rarities)
 
+        language = st.selectbox('language', ['EN', 'CN'])
+
     return row, column
 
 # given csv data, return a pandas pivot table as pandas dataframe
