@@ -2,10 +2,10 @@ import pandas as pd
 import streamlit as st
 import streamlit.components.v1 as components
 from iconloader import load_profile, load_icon
-from dataloader import create_csv
+from dataloader import create_csv, versions, rarities, weapons, elements, body_types, regions
 
 st.set_page_config(
-    page_title='genshin character visualizer',
+    page_title='genshin character visualizer ver3.5',
     page_icon='🤗',
     layout='wide', 
     initial_sidebar_state="auto",
@@ -24,14 +24,30 @@ def load_csv():
     return pd.read_csv(datapath)
 
 
+def st_sidebar(fields):
+    with st.sidebar: 
+        col1, col2 = st.columns([1, 1])
+
+        row = col1.selectbox('row', fields)
+        column = col2.selectbox('column', fields.drop(row))
+
+        version_start = col1.selectbox('version range', versions)
+        version_2nd = versions[versions.index(version_start):]
+        version_end = col2.selectbox(' ', version_2nd)
+
+        element_checkbox = st.multiselect('elements(s) to include', elements)
+        weapon_checkbox = st.multiselect('weapon(s) to include', weapons)
+        region_selector = st.multiselect('region(s) to include', regions)
+        body_selector = st.multiselect('body type(s) to include', body_types)
+        rarity_selector = st.multiselect('rarity(s) to include', rarities)
+
+    return row, column
+
 # given csv data, return a pandas pivot table as pandas dataframe
 def generate_pd_table(data):
+
     fields = data.columns.delete([0, 1, -1])
-
-    col1, col2, buffer = st.columns([1, 1, 2])
-
-    row = col1.selectbox('select row', fields)
-    column = col2.selectbox('select column', fields.drop(row))
+    row, column = st_sidebar(fields)
 
     table = pd.pivot_table(
         data,
@@ -88,7 +104,6 @@ def stylize_html(html):
     return header + html
 
 def download_option(image_file):
-    print('flag download')
     st.download_button(
     label="Download table as png",
     data=image_file,
@@ -97,7 +112,7 @@ def download_option(image_file):
 )
 
 def run_streamlit():
-    st.title('genshin character visualizer')
+    st.title('genshin character visualizer ver3.5')
 
     create_csv()
     data = load_csv()
