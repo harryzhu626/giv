@@ -2,7 +2,6 @@
 
 to-do functionalities: 
 - filters for data fields, e.g. only display characters from 1.5 to 2.7, only show 4 star characters.
-- place filters and drop down menu on the left
 - update region icons with names
 - display character info when hovering mouse over icons, e.g. name, element, weapon. 
   - click icon directs to wiki pages
