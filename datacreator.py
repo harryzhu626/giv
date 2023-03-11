@@ -10,14 +10,14 @@ regions = ['Mondstadt', 'Liyue', 'Inazuma', 'Sumeru', 'Fontaine', 'Natlan', 'Sne
 weapons = ['sword', 'claymore', 'polearm', 'bow', 'catalyst']
 # sf-0, mf-1, mm-2, tf-3, tm-4
 body_types = ['small_female', 'medium_female', 'medium_male', 'tall_female', 'tall_male']
-rarities = ['4', '5']
+rarities = [4, 5]
 versions = [
     # 0     1       2       3       4   5       6
     1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, # 0-6
     # 7     8       9       10      11  12      13      14  15 
     2.0, 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.8, # 7-15
     # 16    17      18      19      20  21      22
-    3.0, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6 # 16-22
+    3.0, 3.1, 3.2, 3.3, 3.4, 3.5, #3.6 # 16-22
     ]
 
 characters = [
