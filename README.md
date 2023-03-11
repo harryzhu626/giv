@@ -12,5 +12,5 @@ to-do functionalities:
 
 
 ## reflections so far
-scalability: the app isn't designed with scalability in mind, nor does it need to worry about scalability. The game will not add new attributes to characters and since at most 2 characters are introduced per version, if the game runs for another 4 years, the character roster will only increase by 70 characters ((52 weeks / 1/6 version/week) x 2 char/version x 4).
-generating table: I'm sure there are better way to generate table than rewriting html for each filter change. 
+- scalability: the app isn't designed with scalability in mind, nor does it need to worry about scalability. The game will not add new attributes to characters and since at most 2 characters are introduced per version, if the game runs for another 4 years, the character roster will only increase by 70 characters ((52 weeks / 1/6 version/week) x 2 char/version x 4).
+- creating the table: I'm sure there are better way to generate table than rewriting html for each filter change. 
