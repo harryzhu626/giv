@@ -4,6 +4,8 @@ import streamlit.components.v1 as components
 from iconloader import load_profile, load_icon
 from datacreator import create_csv, versions, rarities, weapons, elements, body_types, regions
 
+attributes = ('element', 'weapon'), ((versions[0], versions[-1]), elements, weapons, regions, body_types, rarities)
+    
 st.set_page_config(
     page_title='genshin character visualizer ver3.5',
     page_icon='🤗',
@@ -26,7 +28,10 @@ def load_csv():
 
 
 def st_sidebar(fields):
+    global attributes
+
     with st.sidebar: 
+        container = st.container()
         col1, col2 = st.columns([1, 1])
 
         row = col1.selectbox('row', fields)
@@ -42,8 +47,15 @@ def st_sidebar(fields):
         body_checkbox = st.multiselect('body type(s) to include', body_types)
         rarity_checkbox = st.multiselect('rarity(s) to include', rarities)
         # language = st.selectbox('language', ['EN', 'CN'])
-    return (row, column), ((version_start, version_end), element_checkbox, \
-                           weapon_checkbox, region_checkbox, body_checkbox, rarity_checkbox)
+    
+    with st.sidebar:
+        with container:
+            if st.button('RELOAD CHART', use_container_width=True):
+                attributes = (row, column), ((version_start, version_end), element_checkbox, \
+                            weapon_checkbox, region_checkbox, body_checkbox, rarity_checkbox)
+
+    return attributes
+
 
 # given csv data, return a pandas pivot table as pandas dataframe
 def generate_pd_table(data):
