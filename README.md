@@ -8,7 +8,6 @@ to-do functionalities:
 - download button for chart
 - CN option
 (- add some analytics, e.g. 4/5 star ratios for each element)
-(- optimize for browser on phone?)
 
 
 ## reflections so far
