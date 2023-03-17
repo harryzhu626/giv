@@ -7,6 +7,7 @@ to-do functionalities:
  - update region icons with names
 - download button for chart
 - CN option
+- 'clear all' button below 'reload'
 (- add some analytics, e.g. 4/5 star ratios for each element)
 
 
