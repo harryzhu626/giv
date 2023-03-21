@@ -3,7 +3,7 @@
 to-do functionalities: 
 - display character info when hovering mouse over icons
   - data fields: name, element, weapon, etc. 
-  - link to wiki page
+  - link to wiki
  - update region icons with names
 - download button for chart
 - CN option
