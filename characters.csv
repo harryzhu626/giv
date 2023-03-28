@@ -61,3 +61,4 @@ id,name,element,weapon,body_type,region,rarity,version
 60,Yaoyao,dendro,polearm,small_female,Liyue,4,3.4
 61,Alhaitham,dendro,sword,tall_male,Sumeru,5,3.4
 62,Dehya,pyro,claymore,tall_female,Sumeru,5,3.5
+63,Mika,cryo,polearm,medium_male,Mondstadt,4,3.5
