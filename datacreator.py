@@ -84,9 +84,9 @@ characters = [
     [60, 'Yaoyao', elements[3], weapons[2], body_types[0], regions[1], rarities[0], versions[20]],
     [61, 'Alhaitham', elements[3], weapons[0], body_types[4], regions[3], rarities[1], versions[20]],
     [62, 'Dehya', elements[5], weapons[1], body_types[3], regions[3], rarities[1], versions[21]],
-    # [63, 'Mika', elements[6], weapons[2], body_types[2], regions[0], rarities[0], versions[21]],
-    # [64, 'Baizhu', elements[3], weapons[4], body_types[4], regions[1], rarities[1], versions[22]],
-    # [65, 'Kaveh', elements[3], weapons[1], body_types[4], regions[3], rarities[0], versions[22]],
+    [63, 'Mika', elements[6], weapons[2], body_types[2], regions[0], rarities[0], versions[21]],
+    #[64, 'Baizhu', elements[3], weapons[4], body_types[4], regions[1], rarities[1], versions[22]],
+    #[65, 'Kaveh', elements[3], weapons[1], body_types[4], regions[3], rarities[0], versions[22]],
 ]
 
 filename = 'characters.csv'
