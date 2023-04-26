@@ -1,4 +1,4 @@
-# GIV, genshin impact (character data) visualizer ver 3.5
+# GIV, a genshin impact (character) visualizer, ver 3.5
 
 to-do functionalities: 
 - display character info when hovering mouse over icons
