@@ -6,8 +6,10 @@ from datacreator import create_csv, versions, rarities, weapons, elements, body_
 
 attributes = ('element', 'weapon'), ((versions[0], versions[-1]), elements, weapons, regions, body_types, rarities)
     
+title = 'genshin character visualizer ver3.6'
+    
 st.set_page_config(
-    page_title='genshin character visualizer ver3.6',
+    page_title=title,
     page_icon='🤗',
     layout='wide', 
     initial_sidebar_state="expanded",
@@ -152,7 +154,7 @@ def download_option(image_file):
 
 
 def run_streamlit():
-    st.title('genshin character visualizer ver3.5')
+    st.title(title)
 
     create_csv()
     data = load_csv()
