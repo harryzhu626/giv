@@ -17,7 +17,7 @@ versions = [
     # 7     8       9       10      11  12      13      14  15 
     2.0, 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.8, # 7-15
     # 16    17      18      19      20  21      22
-    3.0, 3.1, 3.2, 3.3, 3.4, 3.5, #3.6 # 16-22
+    3.0, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, #3.7 # 16-22
     ]
 
 characters = [
@@ -85,8 +85,8 @@ characters = [
     [61, 'Alhaitham', elements[3], weapons[0], body_types[4], regions[3], rarities[1], versions[20]],
     [62, 'Dehya', elements[5], weapons[1], body_types[3], regions[3], rarities[1], versions[21]],
     [63, 'Mika', elements[6], weapons[2], body_types[2], regions[0], rarities[0], versions[21]],
-    #[64, 'Baizhu', elements[3], weapons[4], body_types[4], regions[1], rarities[1], versions[22]],
-    #[65, 'Kaveh', elements[3], weapons[1], body_types[4], regions[3], rarities[0], versions[22]],
+    [64, 'Baizhu', elements[3], weapons[4], body_types[4], regions[1], rarities[1], versions[22]],
+    [65, 'Kaveh', elements[3], weapons[1], body_types[4], regions[3], rarities[0], versions[22]],
 ]
 
 filename = 'characters.csv'
@@ -96,3 +96,6 @@ def create_csv():
         csvwriter = csv.writer(csvfile)
         csvwriter.writerow(fields)
         csvwriter.writerows(characters)
+
+if __name__ == '__main__':
+    create_csv()
