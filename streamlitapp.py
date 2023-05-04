@@ -7,7 +7,7 @@ from datacreator import create_csv, versions, rarities, weapons, elements, body_
 attributes = ('element', 'weapon'), ((versions[0], versions[-1]), elements, weapons, regions, body_types, rarities)
     
 st.set_page_config(
-    page_title='genshin character visualizer ver3.5',
+    page_title='genshin character visualizer ver3.6',
     page_icon='🤗',
     layout='wide', 
     initial_sidebar_state="expanded",
