@@ -96,6 +96,3 @@ def create_csv():
         csvwriter = csv.writer(csvfile)
         csvwriter.writerow(fields)
         csvwriter.writerows(characters)
-
-if __name__ == '__main__':
-    create_csv()
